@@ -32,11 +32,7 @@ public class ContactUi implements ListDiffInterface<ContactUi> {
 
     @Override
     public boolean theSameAs(ContactUi item) {
-        if(this.hashCode() == item.hashCode()){
-            return true;
-        }else{
-            return false;
-        }
+        return this.hashCode() == item.hashCode();
     }
 
     public String getPhone() {
